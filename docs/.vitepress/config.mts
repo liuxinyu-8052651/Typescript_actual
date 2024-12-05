@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress';
 
 export default defineConfig({
 	title: 'Typescript 实战',
-	base: '/ts-challenge',
+	base: '/Typescript_actual',
 	themeConfig: {
 		logo: '/avatar.png',
 		nav: [
