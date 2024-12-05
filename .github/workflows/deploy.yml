@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -22,7 +22,7 @@ jobs:
           npm i -g pnpm
           pnpm run init
         env:
-          NODE_OPTIONS: '--max_old_space_size=4096'
+          NODE_OPTIONS: "--max_old_space_size=4096"
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.3
